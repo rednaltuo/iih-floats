@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    height: 100px;
+    background-color: #b2d6ff;
+}
+
+.page {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.container {
+    /* We’re telling this container to recognize the height of any floated elements it contains. */
+    overflow: hidden;
+    /* This way we can add a background color and have it actually render. */
+    background-color: #EAEDF0;
+    /* Without overflow: hidden, we wouldn’t be able to see the container’s background because it would have zero height. */
+}
+
+.sidebar {
+    float: left;
+    width: 200px;
+    height: 300px;
+    background-color: #F09A9D;
+}
+
+.content {
+    padding: 20px;
+    float: left;
+    width: 650px;
+    height: 500px;
+    background-color: #f5cf8e;
+}
+
+.article-image {
+    float: left;
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+.footer {
+    /* Use the clear solution when you have an extra unfloated HTML element at the bottom of a container div. In our case, if .footer was .page's last child.
+    /* clear: both; */
+    overflow: hidden;
+    background-color: #d6e9fe;
+}
+
+.column {
+    float: left;
+    width: 31%;
+    margin: 20px 1.15%;
+    height: 160px;
+    background-color: #b2d6ff;
+}
+
+.avatar {
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 25px;
+    border-radius: 40px;
+    background-color: #D6E9FE;
+}
+
+.username {
+    margin-top: 30px;
+}
+
+.comment {
+    margin: 10px;
+    /* To make sure that the text “horizontally cleared” the floated image. Without it, the last line of the .comment text would hang underneath the image (like in a magazine-style layout, like in .content). */
+    overflow: hidden;
+}
